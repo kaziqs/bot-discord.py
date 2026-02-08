@@ -41,7 +41,7 @@ pip install -r requirements.txt
 ### 4. Convidar o Bot para seu Servidor
 
 1. No Discord Developer Portal, vá para "OAuth2" > "URL Generator"
-2. Selecione os escopos:
+2. Selecione as permissões:
    - ✅ `bot`
    - ✅ `applications.commands` 
 3. Selecione as permissões necessárias:
@@ -64,4 +64,5 @@ pip install -r requirements.txt
 ```bash
 python bot.py
 ```
+
 
