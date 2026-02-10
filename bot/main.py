@@ -198,7 +198,9 @@ async def setlobby(ctx, mode: str = None, qtd: int = None):  # Escolher que tipo
 
     if mode == "lol":
         lobby_config[gid] = {"mode": 'lol', "qtd": 10, "lanes": True}
-    
+        await ctx.send("Lobby definido como League of Legends.")
+        return
+
     elif mode == "cs":
         lobby_config[gid] = {"mode": 'cs', "qtd": 10, "lanes": False}
 
