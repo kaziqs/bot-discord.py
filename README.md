@@ -1,14 +1,15 @@
 # Bot de Discord em Python
 
 Um bot de Discord simples criado com Python usando a biblioteca `discord.py`.
+Bot para criação de lobbies de jogos, divisão de times, priorização de lanes (LoL) e modo draft com capitães.
 
-## 📋 Pré-requisitos
+## Pré-requisitos
 
 - Python 3.8 ou superior
 - Uma conta no Discord
 - Um bot criado no Discord Developer Portal
 
-## 🚀 Como Configurar
+## Como Configurar
 
 ### 1. Instalar Dependências
 
@@ -23,8 +24,8 @@ pip install -r requirements.txt
 3. Vá para a aba "Bot" e clique em "Add Bot"
 4. Copie o **Token** do bot
 5. Na seção "Privileged Gateway Intents", habilite:
-   - ✅ MESSAGE CONTENT INTENT ( necessário para ler e mandar mensagens )
-   - ✅ SERVER MEMBERS INTENT ( necessário para ler os membros )
+   - ✅ MESSAGE CONTENT INTENT ( necessario para ler e mandar mensagens )
+   - ✅ SERVER MEMBERS INTENT ( necessario para ler os membros )
 
 ### 3. Configurar o Token
 
@@ -52,17 +53,20 @@ pip install -r requirements.txt
 4. Copie a URL gerada e abra no navegador
 5. Selecione o servidor e autorize
 
-## 🎮 Comandos Disponíveis
+## Comandos Disponíveis
 
-- `!setlobby {custom/lol/cs}` - Customização do lobby (!setlobby custom {quantidade de pessoas}) # Por enquanto a do lol está bugada, mas estou resolvendo.
+- `!setlobby {custom/lol/cs/draft}` - Customização do lobby (!setlobby custom {quantidade de pessoas})
 - `!lobby` - Iniciar o lobby
 - `!lane {top/jg/mid/adc/sup}` - Priorização de lane.
-- `!minhalane` - Irá mostrar sua prioridade de lane.
+- `!minhalane` - Irá mostrar sua prioridade de lane.  
+- `!draft` – inicia draft com capitães aleatórios
+- `!capitao @user1 @user2` – define capitães manualmente
+- `!pick @user` – capitão escolhe jogador
+- `!draftstatus` – mostra estado do draft
+- `!draftcancel` – cancela draft ativo
 
-## ▶️ Como Executar
+## Como Executar
 
 ```bash
-python bot.py
+python bot/main.py
 ```
-
-
